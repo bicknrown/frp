@@ -2,7 +2,7 @@ FROM alpine:3.7
 
 LABEL maintainer="bicknrown <njbrown4@buffalo.edu>"
 
-ENV FRP_VERSION ""
+ENV FRP_VERSION "0.36.2"
 
 COPY makeconfig.sh .
 COPY start.sh .
