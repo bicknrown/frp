@@ -63,10 +63,6 @@ ENV UDP_LOCAL_IP ""
 ENV UDP_LOCAL_PORT ""
 ENV UDP_REMOTE_PORT ""
 
-# create config
-
-RUN ["./makeconfig.sh"]
-
 # start frp
 
 ENTRYPOINT ["./start.sh"]

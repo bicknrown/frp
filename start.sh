@@ -2,6 +2,8 @@
 
 # start client/server
 
+./makeconfig.sh
+
 if [ "${SERVER_OR_CLIENT^^}" = "SERVER" ]; then
 
 	/usr/bin/frps -c /etc/frp/frps.ini
