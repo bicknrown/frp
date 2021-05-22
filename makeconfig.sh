@@ -40,6 +40,7 @@ if [ "${SERVER_OR_CLIENT^^}" = "CLIENT" ]; then
 		echo "type = tcp" >> $CONFIG
 		echo "local_ip = $TCP_LOCAL_IP" >> $CONFIG
 		echo "local_port = $TCP_LOCAL_PORT" >> $CONFIG
+		echo "remote_port = $TCP_REMOTE_PORT" >> $CONFIG
 	fi
 
 	if [ "${UDP^^}" = "TRUE" ]; then
@@ -57,6 +58,7 @@ if [ "${SERVER_OR_CLIENT^^}" = "CLIENT" ]; then
 		echo "type = udp" >> $CONFIG
 		echo "local_ip = $UDP_LOCAL_IP" >> $CONFIG
 		echo "local_port = $UDP_LOCAL_PORT" >> $CONFIG
+		echo "remote_port = $UDP_REMOTE_PORT" >> $CONFIG
 	fi
 	
 fi
